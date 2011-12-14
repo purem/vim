@@ -13,11 +13,10 @@ nmap <Leader>t :CommandT<CR>
 """"""""""""""
 noremap <silent> ,w :w<CR>
 
-
 nmap <silent> <Leader>d :NERDTreeToggle<CR>
 nmap <silent> <Leader>k :TlistToggle<CR>
 map <silent><Leader>cd :cd %:p:h<CR>
 "quickfix winow
 noremap <silent> ,cn :cn<CR>
 noremap <silent> ,cp :cp<CR>
-set statusline=%<\ %n:%f\ %m%r%y%w%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
+set statusline=%<\ %n:%f\ %m%r%y%w%=%-34.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)

@@ -1,3 +1,4 @@
+"A command for checking if a plugin has loaded and if so allow an easy open with gf
 function! s:Filter_lines(cmd, filter)
   redir => lines
   let saveMore = &more
