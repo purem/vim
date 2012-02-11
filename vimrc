@@ -14,6 +14,8 @@ Bundle 'kien/ctrlp.vim.git'
 "Commenting
 Bundle 'scrooloose/nerdcommenter'
 
+Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
+
 
 filetype plugin indent on     " required for Vundle
 
@@ -76,4 +78,18 @@ noremap <silent><Leader>ww :wincmd w<CR>
 noremap <silent><Leader>vs :vsplit <CR>
 noremap <silent><Leader>hs :split <CR>
 
-
+" Latex plugin settings
+let g:Tex_DefaultTargetFormat='pdf'
+let g:Tex_CompileRule_pdf = 'pdflatex -interaction nonstopmode $*'
+let g:Tex_ViewRule_pdf = 'open $*'
+let g:Tex_IgnoredWarnings="Font""\n"
+let g:Tex_IgnoredWarnings =
+                \'Underfull'."\n".
+                \'Overfull'."\n".
+                \'specifier changed to'."\n".
+                \'You have requested'."\n".
+                \'Missing number, treated as zero.'."\n".
+                \'There were undefined references'."\n".
+                \'Latex Warning:'."\n".
+                \'LaTeX Warning:' " float stuck
+let g:Tex_IgnoreLevel = 8
